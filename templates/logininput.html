@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="static/css/hm.css">
+    <title>Title</title>
+
+</head>
+<body>
+<center>  <h1>LOGIN FORM</h1></center>
+    <img class="img1" src="{% static 'img/photo.jpg' %}">
+<form action="./login" method="post">
+    {% csrf_token %}
+    User Name=<input type="text" name="us"><br>
+    Password=<input type="password" name="password"><br>
+    <input type="submit" value="login">
+</form>
+
+
+</body>
+</html>
